@@ -6,7 +6,7 @@ from services.lowe_cli import LoweCli
 
 INTRO_MSG = """
 Welcome to LoweCLI!
-This tool is designed to assist developers by providing an interactive command-line assistant that can answer questions, generate code, and help with various programming tasks. Just type your query and let CLI-Sage help you boost your productivity!
+This tool is designed to assist developers by providing an interactive command-line assistant that can answer questions, generate code, and help with various programming tasks. Just type your query and let LoweCLI help you boost your productivity!
 """
 
 def handle_exit(_signum, _frame):

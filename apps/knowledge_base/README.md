@@ -9,7 +9,7 @@ Simple knowledge base app that act as source for RAG.
 ## Run using Docker
 - Build the Docker image:
 ```sh
-docker build -t cli-sageknowledge-base .
+docker build -t lowe-cli-knowledge-base .
 ```
 - Run the Docker container:
 ```sh
