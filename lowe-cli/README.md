@@ -1,6 +1,6 @@
-# CLI-Sage - AI Powered Command Line Tool
+# LoweCLI - AI Powered Command Line Tool
 
-CLI-Sage is a command line tool that uses AI to help you with various tasks. It can assist with code generation, debugging, and more. The tool is designed to be easy to use and integrate into your workflow.
+LoweCLI is a command line tool that uses AI to help you with various tasks. It can assist with code generation, debugging, and more. The tool is designed to be easy to use and integrate into your workflow.
 
 ## Features
 - AI Powered error debugging.
@@ -25,7 +25,7 @@ cp .env.example .env
 - Install the `uv` package manager: https://docs.astral.sh/uv/getting-started/installation/
 - Change directory to cli-sage:
 ```sh
-cd cli-sage
+cd lowe-cli
 ```
 - Install the package using `uv`:
 ```sh
@@ -33,7 +33,7 @@ uv sync
 ```
 - Run the CLI tool:
 ```sh
-bin/cli-sage
+bin/lowe-cli
 ```
 ---
 **To install globally, do the following steps:**\
@@ -43,5 +43,5 @@ export PATH=/PATH_TO_INSTALLATION/bin/:$PATH
 ```
 Run cli-sage from the command line:
 ```sh
-cli-sage
+lowe-cli
 ```

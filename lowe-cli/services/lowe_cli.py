@@ -15,7 +15,7 @@ from services.vector_db.indexing_service import IndexingService
 from utils.constants import Constants
 
 
-class CliSage:
+class LoweCli:
     @staticmethod
     def ask():
         session_id = uuid.uuid4()
@@ -26,7 +26,7 @@ class CliSage:
         graph = builder.compile()
 
         while True:
-            rich_print("[bold green]cli-sage:bulb:[/bold green][yellow]>[/yellow] ", end="")
+            rich_print("[bold green]lowe-cli:bulb:[/bold green][yellow]>[/yellow] ", end="")
             lines = []
             while True:
                 try:
@@ -83,7 +83,7 @@ class CliSage:
             ("user", Constants.RAG_USER_PROMPT)
         ])
 
-        messages = prompt_template.invoke({"question": user_message, "context": CliSage.get_history()})
+        messages = prompt_template.invoke({"question": user_message, "context": LoweCli.get_history()})
         with yaspin(text="Thinking", color="yellow") as spinner:
             response = LlmClient().invoke(messages)
             spinner.ok("💡 ")

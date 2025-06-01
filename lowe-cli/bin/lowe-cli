@@ -2,7 +2,7 @@
 SCRIPT_PATH="$(realpath "$0")"
 SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
 
-# Move one directory up to cli-sage folder where main.py is located
+# Move one directory up to lowe-cli folder where main.py is located
 cd "$SCRIPT_DIR/.." || exit
 
 # Run using uv (or whatever Python runner is currently being used)
