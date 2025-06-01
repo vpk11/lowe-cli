@@ -57,10 +57,6 @@ cli-sage
   <img src="https://contrib.rocks/image?repo=vpk11/cli-sage" />
 </a>
 
-<!-- prettier-ignore -->
-| [<img src="https://avatars0.githubusercontent.com/u/16625110?s=200&u=5c59d8d73ba6850e98333d0149dc84a6fc196b14&v=3" width="75px;"/><br /><sub><b>👨‍💻vpk11👨‍💻</b></sub>](https://wwww.github.com/vpk11)<br /> |
-| :---: |
-
 ---
 
 ## References🚀
