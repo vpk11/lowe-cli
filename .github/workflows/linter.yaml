@@ -1,4 +1,14 @@
 name: Ruff Linter and Formatter
+run-name: Running Ruff Linter and Formatter🔎
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    types:
+      - opened
+      - synchronize
 
 jobs:
   lint-and-format-check:
@@ -18,15 +28,14 @@ jobs:
       - name: Knowledge Base
         run: |
           cd apps/knowledge_base
-          echo "Knowledge Base: Installing dependencies..."
+          echo "Knowledge Base🎉: Installing dependencies..."
           uv sync --all-extras --dev
-          echo "Knowledge Base: Ruff check..."
+          echo "Knowledge Base🎉: Ruff check..."
           uv run ruff check
-
       - name: CLI Sage
         run: |
-          cd apps/cli-sage
-          echo "CLI Sage: Installing dependencies..."
+          cd cli-sage
+          echo "CLI Sage🎉: Installing dependencies..."
           uv sync --all-extras --dev
-          echo "CLI Sage: Ruff check..."
+          echo "CLI Sage🎉: Ruff check..."
           uv run ruff check
