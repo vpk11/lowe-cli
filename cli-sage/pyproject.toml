@@ -1,0 +1,22 @@
+[project]
+name = "cli-sage"
+version = "0.1.0"
+description = "AI Powered Command Line Tool"
+readme = "README.md"
+requires-python = ">=3.13.3"
+dependencies = [
+    "argparse>=1.4.0",
+    "langchain-chroma>=0.2.4",
+    "langchain-community>=0.3.24",
+    "langchain-huggingface>=0.2.0",
+    "langchain[google-genai]>=0.3.25",
+    "langgraph>=0.4.5",
+    "python-dotenv>=1.1.0",
+    "rich>=14.0.0",
+    "yaspin>=3.1.0",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.11.12",
+]

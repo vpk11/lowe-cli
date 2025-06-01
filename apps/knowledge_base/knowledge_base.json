@@ -1,0 +1,1491 @@
+{
+    "documents": [
+        {
+            "title": "How to make tea",
+            "body": "Steps to make tea",
+            "meta": {
+                "tags": [
+                    "howto",
+                    "kitchen"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Rails: render method",
+            "body": "The render method in Rails controllers is used to generate a response by rendering a template, partial, or arbitrary content.",
+            "meta": {
+                "tags": [
+                    "rails",
+                    "controller",
+                    "render"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Ruby: each method",
+            "body": "The each method in Ruby is used to iterate over elements of a collection, such as an array or hash, executing a block for each element.",
+            "meta": {
+                "tags": [
+                    "ruby",
+                    "enumerable",
+                    "iteration"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Rails: before_action callback",
+            "body": "The before_action callback in Rails controllers allows you to run specific methods before controller actions are executed.",
+            "meta": {
+                "tags": [
+                    "rails",
+                    "controller",
+                    "callback"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Ruby: map method",
+            "body": "The map method in Ruby returns a new array with the results of running a block once for every element in the collection.",
+            "meta": {
+                "tags": [
+                    "ruby",
+                    "enumerable",
+                    "transformation"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: list comprehensions",
+            "body": "List comprehensions provide a concise way to create lists in Python. They consist of brackets containing an expression followed by a for clause, then zero or more for or if clauses.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "list",
+                    "comprehension"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: common IndentationError",
+            "body": "IndentationError occurs when the lines of code are not properly indented. Python relies on indentation to define code blocks, so consistent use of spaces or tabs is crucial.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "indentation"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: ImportError",
+            "body": "ImportError is raised when an import statement fails to find the module definition or when a module cannot be loaded. Check the module name and ensure it is installed.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "import"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: KeyError",
+            "body": "KeyError occurs when a dictionary key is not found in the set of existing keys. Use dict.get(key) to avoid this error or check if the key exists before accessing.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "dictionary"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use virtual environments",
+            "body": "Virtual environments in Python allow you to create isolated environments for different projects, ensuring dependencies do not conflict. Use 'python -m venv env' to create one.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "environment",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: pattern matching",
+            "body": "Pattern matching in Elixir allows you to match values against patterns and bind variables. It is used extensively in function definitions, case statements, and with the = operator.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "pattern-matching",
+                    "functional"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: common MatchError",
+            "body": "MatchError occurs in Elixir when the left side of a pattern match does not match the right side. Ensure the structure and values match exactly.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "error",
+                    "pattern-matching"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to start an iex session",
+            "body": "You can start an interactive Elixir shell (iex) by running 'iex' in your terminal. This allows you to experiment with Elixir code interactively.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "iex",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: Using mix to manage projects",
+            "body": "Mix is a build tool that provides tasks for creating, compiling, testing Elixir projects, and managing dependencies. Use 'mix new project_name' to create a new project.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "mix",
+                    "project"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: Enum module",
+            "body": "The Enum module provides a set of algorithms for enumerating collections in Elixir. Functions like map, filter, and reduce are available for lists and other enumerables.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "enum",
+                    "collection"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: ValueError",
+            "body": "ValueError is raised when a function receives an argument of the correct type but inappropriate value. For example, passing a string to int() that cannot be converted.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "value"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to handle exceptions",
+            "body": "Use try-except blocks in Python to handle exceptions. Place the code that may raise an exception inside the try block and handle specific exceptions in except blocks.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "exception",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to define a module",
+            "body": "Modules in Elixir are defined using the 'defmodule' keyword. Inside a module, you can define functions using 'def'. Modules help organize code and provide namespaces.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "module",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: Function arity",
+            "body": "In Elixir, function arity refers to the number of arguments a function takes. Functions with the same name but different arities are considered different functions.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "function",
+                    "arity"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to read a file",
+            "body": "To read a file in Python, use the open() function with the file path and mode 'r'. Use read(), readline(), or readlines() to access the file's contents.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "file",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: AttributeError",
+            "body": "AttributeError is raised when an invalid attribute reference is made. This usually happens when an object does not have the attribute you are trying to access.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "attribute"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use pipelines",
+            "body": "The pipe operator (|>) in Elixir passes the result of an expression as the first argument to the next function. It helps write readable and concise code.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "pipeline",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to write a function",
+            "body": "Define a function in Python using the 'def' keyword, followed by the function name and parentheses. Indent the function body and use 'return' to return a value.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "function",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: TypeError",
+            "body": "TypeError is raised when an operation or function is applied to an object of inappropriate type. For example, adding a string and an integer.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "type"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Recursion",
+            "body": "Recursion is a common technique in Elixir for looping. Functions call themselves with updated arguments until a base case is reached.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "recursion",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use list slicing",
+            "body": "List slicing in Python allows you to access a subset of a list using the syntax list[start:stop:step]. It returns a new list with the selected elements.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "list",
+                    "slicing"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: IndexError",
+            "body": "IndexError is raised when a sequence subscript is out of range. For example, accessing an index that does not exist in a list.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "index"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use GenServer",
+            "body": "GenServer is a generic server process in Elixir used to implement server-like processes. It abstracts common patterns for state, synchronous and asynchronous calls.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "genserver",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use dictionaries",
+            "body": "Dictionaries in Python are collections of key-value pairs. Use curly braces to define them and access values using keys.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "dictionary",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: ZeroDivisionError",
+            "body": "ZeroDivisionError is raised when a number is divided by zero. Always check the denominator before performing division.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "error",
+                    "division"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Agents",
+            "body": "Agents in Elixir provide a simple abstraction for state. They allow you to store and update state in a separate process.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "agent",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use for loops",
+            "body": "For loops in Python are used to iterate over sequences like lists, tuples, or strings. Use 'for item in sequence:' to loop through each item.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "loop",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use lambda functions",
+            "body": "Lambda functions are small anonymous functions defined with the lambda keyword. They can take any number of arguments but only have one expression.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "lambda",
+                    "function"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Supervisors",
+            "body": "Supervisors in Elixir are processes that monitor other processes, restarting them if they fail. They are essential for building fault-tolerant applications.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "supervisor",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use classes",
+            "body": "Classes in Python are blueprints for creating objects. Define a class using the 'class' keyword, and create instances by calling the class as a function.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "class",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use decorators",
+            "body": "Decorators in Python are functions that modify the behavior of other functions. They are applied using the @decorator syntax above a function definition.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "decorator",
+                    "function"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Tasks",
+            "body": "Tasks in Elixir provide a way to run code concurrently. Use Task.async and Task.await to run and wait for tasks.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "task",
+                    "concurrency"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use generators",
+            "body": "Generators are iterators that yield items one at a time using the 'yield' keyword. They are memory efficient for large data sets.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "generator",
+                    "iterator"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use comprehensions",
+            "body": "Comprehensions provide a concise way to create lists, sets, and dictionaries in Python. They consist of an expression followed by a for clause.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "comprehension",
+                    "howto"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Streams",
+            "body": "Streams in Elixir allow you to work with potentially infinite collections in a lazy manner. Use the Stream module to create and manipulate streams.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "stream",
+                    "collection"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use sets",
+            "body": "Sets in Python are unordered collections of unique elements. Use curly braces or the set() function to create sets.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "set",
+                    "collection"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use tuples",
+            "body": "Tuples are immutable sequences in Python. They are defined using parentheses and can store multiple items of different types.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "tuple",
+                    "collection"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Maps",
+            "body": "Maps in Elixir are key-value stores. Use %{} to define a map and access values using keys.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "map",
+                    "collection"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use string formatting",
+            "body": "String formatting in Python can be done using f-strings, the format() method, or the % operator. F-strings are recommended for readability.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "string",
+                    "formatting"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use regular expressions",
+            "body": "The 're' module in Python provides support for regular expressions. Use re.match, re.search, and re.findall to work with patterns in strings.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "regex",
+                    "string"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use List module",
+            "body": "The List module in Elixir provides functions for working with lists, such as flatten, duplicate, and delete.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "list",
+                    "module"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use the requests library",
+            "body": "The requests library in Python is used to make HTTP requests. Use requests.get, requests.post, etc., to interact with web APIs.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "requests",
+                    "http"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use unittest",
+            "body": "The unittest module in Python provides a framework for writing and running tests. Define test cases by subclassing unittest.TestCase.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "unittest",
+                    "testing"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use ExUnit",
+            "body": "ExUnit is the built-in test framework in Elixir. Define test cases using 'test' blocks inside modules that use ExUnit.Case.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "exunit",
+                    "testing"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use logging",
+            "body": "The logging module in Python provides a flexible framework for emitting log messages from Python programs. Configure loggers, handlers, and formatters as needed.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "logging",
+                    "debugging"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use context managers",
+            "body": "Context managers in Python are used to properly manage resources. Use the 'with' statement to ensure resources are cleaned up after use.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "context-manager",
+                    "resource"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Structs",
+            "body": "Structs in Elixir are extensions built on top of maps that provide compile-time checks and default values. Define them inside modules using 'defstruct'.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "struct",
+                    "data"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use property decorators",
+            "body": "The @property decorator in Python allows you to define methods that can be accessed like attributes, providing controlled access to instance data.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "property",
+                    "decorator"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use itertools",
+            "body": "The itertools module in Python provides functions for efficient looping, such as count, cycle, and chain, which work with iterators.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "itertools",
+                    "iterator"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use comprehensions",
+            "body": "Comprehensions in Elixir provide a concise way to build lists from existing collections using the for keyword and filters.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "comprehension",
+                    "list"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use functools",
+            "body": "The functools module in Python provides higher-order functions for functional programming, such as reduce, partial, and lru_cache.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "functools",
+                    "functional"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use json module",
+            "body": "The json module in Python allows you to encode and decode JSON data. Use json.dumps to serialize and json.loads to deserialize JSON strings.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "json",
+                    "serialization"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Keyword lists",
+            "body": "Keyword lists in Elixir are lists of tuples where the first element is an atom. They are often used for passing options to functions.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "keyword-list",
+                    "data"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use subprocess",
+            "body": "The subprocess module in Python allows you to spawn new processes, connect to their input/output/error pipes, and obtain their return codes.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "subprocess",
+                    "process"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use os module",
+            "body": "The os module in Python provides a way of using operating system dependent functionality like reading or writing to the file system.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "os",
+                    "filesystem"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Application module",
+            "body": "The Application module in Elixir is used to define and configure OTP applications. It provides functions to start and stop applications.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "application",
+                    "otp"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use argparse",
+            "body": "The argparse module in Python makes it easy to write user-friendly command-line interfaces. It parses command-line arguments and options.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "argparse",
+                    "cli"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use threading",
+            "body": "The threading module in Python allows you to run multiple threads (tasks, function calls) at once, enabling concurrent execution.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "threading",
+                    "concurrency"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Processes",
+            "body": "Processes in Elixir are lightweight and isolated. Use spawn to create new processes and send/receive messages for communication.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "process",
+                    "concurrency"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use multiprocessing",
+            "body": "The multiprocessing module in Python allows you to create processes that run in parallel, taking advantage of multiple CPU cores.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "multiprocessing",
+                    "parallel"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use pickle",
+            "body": "The pickle module in Python is used for serializing and deserializing Python object structures, also called marshalling or flattening.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "pickle",
+                    "serialization"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Macros",
+            "body": "Macros in Elixir allow you to extend the language by writing code that generates code at compile time. Use 'defmacro' to define macros.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "macro",
+                    "metaprogramming"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use sqlite3",
+            "body": "The sqlite3 module in Python provides a lightweight disk-based database that doesn’t require a separate server process.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "sqlite3",
+                    "database"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use csv module",
+            "body": "The csv module in Python allows you to read from and write to CSV files easily. Use csv.reader and csv.writer for handling CSV data.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "csv",
+                    "file"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use ETS",
+            "body": "ETS (Erlang Term Storage) in Elixir provides in-memory storage for large amounts of data. Use :ets module functions to create and manage tables.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "ets",
+                    "storage"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use time module",
+            "body": "The time module in Python provides various time-related functions, such as getting the current time, sleeping, and measuring intervals.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "time",
+                    "datetime"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use datetime module",
+            "body": "The datetime module in Python supplies classes for manipulating dates and times. Use datetime.datetime, datetime.date, and datetime.timedelta.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "datetime",
+                    "date"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Date and Time modules",
+            "body": "Elixir provides Date, Time, and NaiveDateTime modules for working with dates and times. Use their functions to parse, format, and manipulate date/time values.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "date",
+                    "time"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use math module",
+            "body": "The math module in Python provides access to mathematical functions like sqrt, sin, cos, and constants like pi and e.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "math",
+                    "function"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use random module",
+            "body": "The random module in Python implements pseudo-random number generators for various distributions. Use random.randint, random.choice, etc.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "random",
+                    "function"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Logger",
+            "body": "Logger is the built-in logging facility in Elixir. Use Logger.info, Logger.warn, Logger.error, and Logger.debug to log messages.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "logger",
+                    "debugging"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use hashlib",
+            "body": "The hashlib module in Python provides a common interface to many secure hash and message digest algorithms, such as SHA1, SHA256, and MD5.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "hashlib",
+                    "security"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use socket module",
+            "body": "The socket module in Python provides access to the BSD socket interface, allowing you to create network clients and servers.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "socket",
+                    "network"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use HTTPoison",
+            "body": "HTTPoison is a popular HTTP client library in Elixir. Use HTTPoison.get, HTTPoison.post, etc., to make HTTP requests.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "httpoison",
+                    "http"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use BeautifulSoup",
+            "body": "BeautifulSoup is a Python library for parsing HTML and XML documents. Use it to extract data from web pages and navigate the parse tree.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "beautifulsoup",
+                    "html"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use pandas",
+            "body": "Pandas is a powerful data analysis library in Python. Use DataFrame and Series objects to manipulate and analyze structured data.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "pandas",
+                    "data"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Phoenix Framework",
+            "body": "Phoenix is a web development framework for Elixir. It provides tools for building scalable and maintainable web applications.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "phoenix",
+                    "web"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use Flask",
+            "body": "Flask is a lightweight web framework for Python. Use it to build web applications by defining routes and handling requests.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "flask",
+                    "web"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use Django",
+            "body": "Django is a high-level Python web framework that encourages rapid development and clean, pragmatic design. It includes an ORM, admin interface, and more.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "django",
+                    "web"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Ecto",
+            "body": "Ecto is a database wrapper and query generator for Elixir. Use it to interact with databases, define schemas, and run migrations.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "ecto",
+                    "database"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use SQLAlchemy",
+            "body": "SQLAlchemy is a SQL toolkit and ORM for Python. Use it to define database models, run queries, and manage database connections.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "sqlalchemy",
+                    "database"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use pytest",
+            "body": "Pytest is a testing framework for Python that makes it easy to write simple and scalable test cases. Use assert statements for test validation.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "pytest",
+                    "testing"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Plug",
+            "body": "Plug is a specification for composable modules in web applications in Elixir. It is used for building web servers and middleware.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "plug",
+                    "web"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use asyncio",
+            "body": "The asyncio module in Python provides infrastructure for writing single-threaded concurrent code using coroutines, multiplexing I/O access over sockets and other resources.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "asyncio",
+                    "concurrency"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use async/await",
+            "body": "Async and await are used in Python to define and run asynchronous functions. Use 'async def' to define and 'await' to call asynchronous code.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "async",
+                    "await"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Registry",
+            "body": "Registry in Elixir provides a local, decentralized, and scalable key-value process storage. Use it to register and lookup processes by name.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "registry",
+                    "process"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use enum module",
+            "body": "The enum module in Python provides support for enumerations, which are a set of symbolic names bound to unique, constant values.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "enum",
+                    "data"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use dataclasses",
+            "body": "Dataclasses in Python provide a decorator and functions for automatically adding special methods to user-defined classes. Use @dataclass to define them.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "dataclass",
+                    "class"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Protocols",
+            "body": "Protocols in Elixir provide polymorphism. They allow you to define functions that can be implemented for different data types.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "protocol",
+                    "polymorphism"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use typing module",
+            "body": "The typing module in Python provides support for type hints, enabling static type checking of Python code.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "typing",
+                    "type"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use heapq",
+            "body": "The heapq module in Python provides an implementation of the heap queue algorithm, also known as the priority queue algorithm.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "heapq",
+                    "algorithm"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Mix tasks",
+            "body": "Mix tasks in Elixir are custom commands you can define to automate common development tasks. Use 'mix new' to create a new project and 'mix help' to list tasks.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "mix",
+                    "task"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use collections module",
+            "body": "The collections module in Python provides alternatives to built-in types, such as namedtuple, deque, Counter, and defaultdict.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "collections",
+                    "data"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use Counter",
+            "body": "Counter is a subclass of dict in the collections module for counting hashable objects. Use it to count occurrences of elements in a collection.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "counter",
+                    "collections"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Agent for state",
+            "body": "Agents in Elixir are abstractions for state. Use Agent.start_link to create an agent and Agent.get/Agent.update to access and modify state.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "agent",
+                    "state"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use deque",
+            "body": "Deque is a double-ended queue provided by the collections module in Python. It allows fast appends and pops from both ends.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "deque",
+                    "collections"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use defaultdict",
+            "body": "defaultdict is a subclass of dict in the collections module. It provides a default value for nonexistent keys, avoiding KeyError.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "defaultdict",
+                    "collections"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use GenStage",
+            "body": "GenStage is a framework for exchanging events between producers and consumers in Elixir. It is used for building data processing pipelines.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "genstage",
+                    "pipeline"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use zip",
+            "body": "The zip function in Python combines multiple iterables into a single iterator of tuples, where the i-th tuple contains the i-th element from each iterable.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "zip",
+                    "iterator"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use map and filter",
+            "body": "The map function applies a function to all items in an input list. The filter function constructs a list from those elements for which a function returns true.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "map",
+                    "filter"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Flow",
+            "body": "Flow is a library for computational parallel flows in Elixir. It allows you to process collections in parallel using stages.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "flow",
+                    "parallel"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use property",
+            "body": "The property function in Python is used to create managed attributes in classes, allowing you to define getter, setter, and deleter methods.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "property",
+                    "class"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use super",
+            "body": "The super function in Python is used to call methods from a parent or sibling class. It is commonly used in class inheritance.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "super",
+                    "inheritance"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Behaviours",
+            "body": "Behaviours in Elixir define a set of functions that must be implemented by a module. They are used to enforce contracts and provide polymorphism.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "behaviour",
+                    "contract"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use __init__",
+            "body": "__init__ is the constructor method in Python classes. It is called when an instance of the class is created and is used to initialize attributes.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "init",
+                    "class"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use __str__ and __repr__",
+            "body": "__str__ and __repr__ are special methods in Python used to define string representations of objects. __str__ is for end users, __repr__ is for developers.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "str",
+                    "repr"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Elixir: How to use Inspect protocol",
+            "body": "The Inspect protocol in Elixir is used to convert data structures to readable strings. Implement Inspect for custom types to control their string representation.",
+            "meta": {
+                "tags": [
+                    "elixir",
+                    "inspect",
+                    "protocol"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use __getitem__ and __setitem__",
+            "body": "__getitem__ and __setitem__ are special methods in Python that allow objects to use the bracket notation for getting and setting items.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "getitem",
+                    "setitem"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Python: How to use __call__",
+            "body": "__call__ is a special method in Python that allows an instance of a class to be called as a function.",
+            "meta": {
+                "tags": [
+                    "python",
+                    "call",
+                    "class"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to order muffins online",
+            "body": "To order muffins from Dunder Muffin Company online, visit our website, select your favorite muffins, add them to your cart, and proceed to checkout. You can choose delivery or pickup and pay securely online.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "order"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to join the Muffin Club",
+            "body": "Join the Dunder Muffin Club by signing up on our website. Members receive exclusive discounts, early access to new flavors, and a free muffin on their birthday.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "club"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to redeem a gift card",
+            "body": "To redeem a Dunder Muffin gift card, enter the gift card code at checkout online or present it at any of our stores. The balance will be applied to your purchase.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "gift-card"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to apply for a job",
+            "body": "Apply for a job at Dunder Muffin Company by visiting our careers page, browsing open positions, and submitting your application online. We look for enthusiastic team players who love muffins.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "job"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to request catering",
+            "body": "To request catering from Dunder Muffin Company, fill out the catering request form on our website or call our catering hotline. We offer a variety of muffin platters and beverages for events.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "catering"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to report a missing order",
+            "body": "If your Dunder Muffin order is missing, contact our customer support with your order number. We will investigate and resolve the issue promptly, offering a replacement or refund if necessary.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "support"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to become a supplier",
+            "body": "To become a supplier for Dunder Muffin Company, submit your company profile and product catalog through our supplier portal. Our procurement team will review your application and contact you if there is a fit.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "supplier"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to get nutritional information",
+            "body": "Nutritional information for all Dunder Muffin products is available on our website. You can also request printed information at any of our stores.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "nutrition"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to request a custom muffin flavor",
+            "body": "To request a custom muffin flavor, fill out the suggestion form on our website. Our bakers review suggestions monthly and may contact you for more details.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "custom"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        },
+        {
+            "title": "Dunder Muffin: How to subscribe to the newsletter",
+            "body": "Subscribe to the Dunder Muffin newsletter by entering your email address in the subscription box on our homepage. You'll receive updates on new products, promotions, and events.",
+            "meta": {
+                "tags": [
+                    "dunder-muffin",
+                    "howto",
+                    "newsletter"
+                ]
+            },
+            "url": "https://en.wikipedia.org/wiki/Special:Random"
+        }
+    ]
+}
