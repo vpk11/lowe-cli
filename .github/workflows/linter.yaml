@@ -34,7 +34,7 @@ jobs:
           uv run ruff check
       - name: CLI Sage
         run: |
-          cd apps/cli-sage
+          cd cli-sage
           echo "CLI Sage🎉: Installing dependencies..."
           uv sync --all-extras --dev
           echo "CLI Sage🎉: Ruff check..."
