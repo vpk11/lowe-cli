@@ -1,5 +1,5 @@
 [project]
-name = "cli-sage"
+name = "lowe-cli"
 version = "0.1.0"
 description = "AI Powered Command Line Tool"
 readme = "README.md"

@@ -13,7 +13,7 @@ docker build -t cli-sageknowledge-base .
 ```
 - Run the Docker container:
 ```sh
-docker run -d -p 4000:4000 cli-sage-knowledge-base
+docker run -d -p 4000:4000 lowe-cli-knowledge-base
 ```
 - Access the app at `http://localhost:4000`
 
