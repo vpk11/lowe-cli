@@ -1,9 +1,9 @@
 import os
 
 class Constants:
-    MODEL_NAME = os.getenv("MODEL_NAME", "gemini-2.0-flash")
-    MODEL_PROVIDER = os.getenv("MODEL_PROVIDER", "google_genai")
-    KNOWLEDGE_BASE = os.getenv("KNOWLEDGE_BASE_URL", "http://localhost:4000/")
+    MODEL_NAME = os.getenv("MODEL_NAME") or "gemini-2.0-flash"
+    MODEL_PROVIDER = os.getenv("MODEL_PROVIDER") or "google_genai"
+    KNOWLEDGE_BASE = os.getenv("KNOWLEDGE_BASE_URL") or "http://localhost:4000/"
 
     ASK_SYSTEM_PROMPT = """
     You are a CLI assistant named cli-sage. Provide clear and concise solutions for the error messages passed as chat.
