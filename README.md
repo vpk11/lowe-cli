@@ -17,9 +17,16 @@ CLI-Sage is a command line tool that uses AI to help you with various tasks. It 
 - **ChromeDB** for vector storage
 
 ## Installation🚀
+- Setup `.env` file:
+```sh
+cp .env.example .env
+```
+- Edit the `.env` file to configure the following environment variables:
+  - `GEMINI_API_KEY`: Your Gemini API key.
+  - `KNOWLEDGE_BASE_URL`: The URL of the knowledge base app (e.g., `http://localhost:4000` if running locally).
+  - `MODEL_NAME`: The name of the model you want to use (e.g., `gemini-2.0-flash`).
+  - MODEL_PROVIDER: The provider of the model you want to use (e.g., `google_genai`).
 - Install the `uv` package manager: https://docs.astral.sh/uv/getting-started/installation/
-- Clone the repository
-- Navigate to the cloned directory
 - Change directory to cli-sage:
 ```sh
 cd cli-sage
