@@ -27,7 +27,7 @@ cp .env.example .env
   - `MODEL_NAME`: The name of the model you want to use (e.g., `gemini-2.0-flash`).
   - `MODEL_PROVIDER`: The provider of the model you want to use (e.g., `google_genai`).
 - Install the `uv` package manager: https://docs.astral.sh/uv/getting-started/installation/
-- Change directory to cli-sage:
+- Change directory to lowe-cli:
 ```sh
 cd lowe-cli
 ```
@@ -45,7 +45,7 @@ Add the following to your `.bashrc` or `.zshrc` file to set up the environment:
 ```sh
 export PATH=/PATH_TO_INSTALLATION/bin/:$PATH
 ```
-Run cli-sage from the command line:
+Run lowe-cli from the command line:
 ```sh
 lowe-cli
 ```
@@ -53,8 +53,8 @@ lowe-cli
 ## Team🚀
 > Our Contributors
 
-<a href="https://github.com/vpk11/cli-sage/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=vpk11/cli-sage" />
+<a href="https://github.com/vpk11/lowe-cli/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=vpk11/lowe-cli" />
 </a>
 
 ---
