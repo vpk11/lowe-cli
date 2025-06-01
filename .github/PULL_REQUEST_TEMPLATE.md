@@ -1,6 +1,11 @@
 # Pull Request Title
 ## Description
 - Provide a brief summary of the changes.
+## Related Issues
+<!-- Link to relevant issues. Use keywords like Closes, Fixes, Resolves to auto-close issues. -->
+- Closes #ISSUE_NUMBER
+- Related to #ISSUE_NUMBER
+
 
 ## Type of Change
 - [ ] Bug fix 🐛
