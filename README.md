@@ -1,4 +1,4 @@
-# 👨‍💻 CLI-Sage - AI Powered Command Line Tool
+# 👨‍💻 CLI-Sage - AI Powered Command Line Tool 👨‍💻
 ![CLI-Sage Cover Image](images/cover_image.jpeg)
 
 CLI-Sage is a command line tool that uses AI to help you with various tasks. It can assist with code debugging, command suggestions, document lookup and more. The tool is designed to be easy to use and integrate into your workflow.
