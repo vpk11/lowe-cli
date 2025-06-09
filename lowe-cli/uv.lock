@@ -285,43 +285,6 @@ wheels = [
 ]
 
 [[package]]
-name = "cli-sage"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "argparse" },
-    { name = "langchain", extra = ["google-genai"] },
-    { name = "langchain-chroma" },
-    { name = "langchain-community" },
-    { name = "langchain-huggingface" },
-    { name = "langgraph" },
-    { name = "python-dotenv" },
-    { name = "rich" },
-    { name = "yaspin" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "argparse", specifier = ">=1.4.0" },
-    { name = "langchain", extras = ["google-genai"], specifier = ">=0.3.25" },
-    { name = "langchain-chroma", specifier = ">=0.2.4" },
-    { name = "langchain-community", specifier = ">=0.3.24" },
-    { name = "langchain-huggingface", specifier = ">=0.2.0" },
-    { name = "langgraph", specifier = ">=0.4.5" },
-    { name = "python-dotenv", specifier = ">=1.1.0" },
-    { name = "rich", specifier = ">=14.0.0" },
-    { name = "yaspin", specifier = ">=3.1.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ruff", specifier = ">=0.11.12" }]
-
-[[package]]
 name = "click"
 version = "8.2.1"
 source = { registry = "https://pypi.org/simple" }
@@ -961,7 +924,7 @@ wheels = [
 
 [[package]]
 name = "langgraph"
-version = "0.4.7"
+version = "0.4.8"
 source = { registry = "https://pypi.org/simple" }
 dependencies = [
     { name = "langchain-core" },
@@ -971,9 +934,9 @@ dependencies = [
     { name = "pydantic" },
     { name = "xxhash" },
 ]
-sdist = { url = "https://files.pythonhosted.org/packages/67/64/4275256f9d22bf579376be6a3eabf82494d1ef2f82e353dca9bfcc1bda83/langgraph-0.4.7.tar.gz", hash = "sha256:8948a35f6f85805c8ac36e94d5492c86a34c39dcf6f405b0f84491bc444e3479", size = 444029, upload-time = "2025-05-24T00:01:32.904Z" }
+sdist = { url = "https://files.pythonhosted.org/packages/9b/53/03380b675fef3d00d2d270e530d1a8bfe4e6f27117016a478670c9c74469/langgraph-0.4.8.tar.gz", hash = "sha256:48445ac8a351b7bdc6dee94e2e6a597f8582e0516ebd9dea0fd0164ae01b915e", size = 453277, upload-time = "2025-06-02T23:26:16.979Z" }
 wheels = [
-    { url = "https://files.pythonhosted.org/packages/c0/ed/6435328d51f0a56f42e53f8089ce31479c6e041248de9448652150f83162/langgraph-0.4.7-py3-none-any.whl", hash = "sha256:a925a3881fcd631eccf076994f41012e9320cd1adacc9aeb89ffcb3442b61f86", size = 154924, upload-time = "2025-05-24T00:01:31.097Z" },
+    { url = "https://files.pythonhosted.org/packages/17/8a/fe05ec63ee4c3889a8b89679a6bdd1be6087962818996f3b361da23a5529/langgraph-0.4.8-py3-none-any.whl", hash = "sha256:273b02782669a474ba55ef4296607ac3bac9e93639d37edc0d32d8cf1a41a45b", size = 152444, upload-time = "2025-06-02T23:26:15.107Z" },
 ]
 
 [[package]]
@@ -1032,6 +995,43 @@ sdist = { url = "https://files.pythonhosted.org/packages/02/21/df84fe8b5c1697199
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e2/72/f5304de3e7e80e6dc266c161230aecb7895958f78b5af1541317d7615fc6/langsmith-0.3.43-py3-none-any.whl", hash = "sha256:2d4558068abf2eeb60ff80871187724e07f5e657d7d6be9e0c603df36c41140a", size = 361148, upload-time = "2025-05-29T00:21:08.759Z" },
 ]
+
+[[package]]
+name = "lowe-cli"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "argparse" },
+    { name = "langchain", extra = ["google-genai"] },
+    { name = "langchain-chroma" },
+    { name = "langchain-community" },
+    { name = "langchain-huggingface" },
+    { name = "langgraph" },
+    { name = "python-dotenv" },
+    { name = "rich" },
+    { name = "yaspin" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "argparse", specifier = ">=1.4.0" },
+    { name = "langchain", extras = ["google-genai"], specifier = ">=0.3.25" },
+    { name = "langchain-chroma", specifier = ">=0.2.4" },
+    { name = "langchain-community", specifier = ">=0.3.24" },
+    { name = "langchain-huggingface", specifier = ">=0.2.0" },
+    { name = "langgraph", specifier = ">=0.4.5" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
+    { name = "rich", specifier = ">=14.0.0" },
+    { name = "yaspin", specifier = ">=3.1.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ruff", specifier = ">=0.11.12" }]
 
 [[package]]
 name = "markdown-it-py"
