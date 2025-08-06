@@ -1,9 +1,27 @@
 #!/usr/bin/env bash
+
+# Exit on any error, undefined variables, and pipe failures
+set -euo pipefail
+
+# Get the directory of this script
 SCRIPT_PATH="$(realpath "$0")"
 SCRIPT_DIR="$(dirname "$SCRIPT_PATH")"
 
 # Move one directory up to lowe-cli folder where main.py is located
-cd "$SCRIPT_DIR/.." || exit
+cd "$SCRIPT_DIR/.." || {
+    echo "Error: Could not change to project directory" >&2
+    exit 1
+}
 
-# Run using uv (or whatever Python runner is currently being used)
-"$HOME/.local/bin/uv" run main.py "$@"
+# Check if uv is available, fallback to system python if not
+if command -v "$HOME/.local/bin/uv" >/dev/null 2>&1; then
+    "$HOME/.local/bin/uv" run main.py "$@"
+elif command -v uv >/dev/null 2>&1; then
+    uv run main.py "$@"
+elif command -v python3 >/dev/null 2>&1; then
+    echo "Warning: uv not found, falling back to python3" >&2
+    python3 main.py "$@"
+else
+    echo "Error: Neither uv nor python3 found in PATH" >&2
+    exit 1
+fi
