@@ -1,12 +1,16 @@
 """Input handler for CLI operations following Python best practices."""
-import sys
-import os
-from typing import Optional, List, Callable
-from services.ui.ui_service import UIService
+from typing import Optional, List
+from .multiline_input_handler import MultilineInputHandler
+from .terminal_utils import TerminalUtils
 
 
 class InputHandler:
-    """Handles user input with proper signal handling and validation."""
+    """
+    Handles user input with proper signal handling and validation.
+    
+    This class has been simplified to only include the functionality 
+    actually used by the application (multiline input).
+    """
     
     def __init__(self, prompt: str = "", max_input_size: int = 5000, max_lines: int = 1000):
         """
@@ -20,6 +24,9 @@ class InputHandler:
         self.prompt = prompt
         self.max_input_size = max_input_size
         self.max_lines = max_lines
+        
+        # Initialize only the multiline handler (the only one actually used)
+        self._multiline_handler = MultilineInputHandler(prompt, max_input_size, max_lines)
     
     def get_multiline_input(self, max_lines: Optional[int] = None, 
                            custom_prompt: Optional[str] = None) -> Optional[str]:
@@ -33,226 +40,24 @@ class InputHandler:
         Returns:
             Cleaned user input or None if user wants to exit
         """
-        effective_max_lines = max_lines or self.max_lines
-        lines: List[str] = []
-        line_count = 0
-        
-        # Show help hint for first-time users
-        if custom_prompt:
-            print(custom_prompt)
-        elif not hasattr(self, '_shown_multiline_help'):
-            UIService.print_info("Enter your input (empty line to finish, Ctrl+C to cancel, Ctrl+D to exit):")
-            self._shown_multiline_help = True
-        
-        try:
-            while line_count < effective_max_lines:
-                try:
-                    # Show line number for long inputs
-                    if line_count > 5:
-                        line = input(f"{line_count + 1:3d}> ")
-                    else:
-                        line = input()
-                except EOFError:
-                    # Handle Ctrl+D gracefully
-                    if not lines:
-                        # EOF on first line means exit
-                        UIService.print_goodbye()
-                        return None
-                    # EOF with existing input, treat as submission
-                    break
-                except KeyboardInterrupt:
-                    # Ctrl+C pressed - let it propagate to CLI interface
-                    raise
-                
-                # Empty line ends input
-                if not line:
-                    break
-                    
-                lines.append(line)
-                line_count += 1
-            
-            if line_count >= effective_max_lines:
-                UIService.print_error(f"Input too long (max {effective_max_lines} lines)")
-                if self._ask_retry("Input was too long. Try again?"):
-                    return self.get_multiline_input(max_lines, custom_prompt)
-                return None
-                
-        except Exception as e:
-            UIService.print_error(f"Error reading input: {e}")
-            return None
-        
-        return self._clean_input(lines)
+        return self._multiline_handler.get_input(max_lines, custom_prompt)
     
-    def get_single_line_input(self, custom_prompt: Optional[str] = None, 
-                             strip_whitespace: bool = True,
-                             validator: Optional[Callable[[str], bool]] = None) -> Optional[str]:
-        """
-        Get single line input from user.
-        
-        Args:
-            custom_prompt: Custom prompt for this input
-            strip_whitespace: Whether to strip leading/trailing whitespace
-            validator: Optional validation function
-            
-        Returns:
-            User input or None if user wants to exit
-        """
-        prompt_text = custom_prompt or self.prompt
-        
-        while True:
-            try:
-                line = input(prompt_text)
-                if strip_whitespace:
-                    line = line.strip()
-                
-                # Apply validation if provided
-                if validator and line and not validator(line):
-                    UIService.print_error("Invalid input. Please try again.")
-                    continue
-                    
-                return line
-            except EOFError:
-                return None
-            except KeyboardInterrupt:
-                return None
-            except Exception as e:
-                UIService.print_error(f"Error reading input: {e}")
-                return None
-    
-    def get_password_input(self, prompt_text: str = "Password: ") -> Optional[str]:
-        """
-        Get password input without echoing to terminal.
-        
-        Args:
-            prompt_text: Prompt to display
-            
-        Returns:
-            Password string or None if cancelled
-        """
-        try:
-            import getpass
-            return getpass.getpass(prompt_text)
-        except (EOFError, KeyboardInterrupt):
-            return None
-        except Exception as e:
-            UIService.print_error(f"Error reading password: {e}")
-            return None
-    
-    def get_choice_input(self, prompt_text: str, choices: List[str], 
-                        default: Optional[str] = None, case_sensitive: bool = False) -> Optional[str]:
-        """
-        Get input with predefined choices.
-        
-        Args:
-            prompt_text: Prompt to display
-            choices: List of valid choices
-            default: Default choice if user presses enter
-            case_sensitive: Whether choices are case sensitive
-            
-        Returns:
-            Selected choice or None if cancelled
-        """
-        if not choices:
-            raise ValueError("Choices cannot be empty")
-        
-        # Format choices display
-        choices_display = "/".join(choices)
-        if default:
-            choices_display = choices_display.replace(default, default.upper())
-        
-        full_prompt = f"{prompt_text} [{choices_display}]: "
-        
-        while True:
-            try:
-                response = input(full_prompt).strip()
-                
-                if not response and default:
-                    return default
-                
-                # Check if response matches any choice
-                if case_sensitive:
-                    valid_choices = choices
-                    user_input = response
-                else:
-                    valid_choices = [choice.lower() for choice in choices]
-                    user_input = response.lower()
-                
-                if user_input in valid_choices:
-                    # Return original case choice
-                    idx = valid_choices.index(user_input)
-                    return choices[idx]
-                else:
-                    UIService.print_error(f"Please choose from: {choices_display}")
-                    
-            except (EOFError, KeyboardInterrupt):
-                return None
-            except Exception as e:
-                UIService.print_error(f"Error reading input: {e}")
-                return None
-    
+    # Legacy methods for backward compatibility (no longer used but kept to avoid breaking changes)
     def _ask_retry(self, message: str) -> bool:
         """Ask user if they want to retry an operation."""
-        return self.confirm_action(message, default=True)
+        return self._multiline_handler.ask_retry(message)
     
     def _clean_input(self, lines: List[str]) -> str:
-        """
-        Clean and validate input lines.
-        
-        Args:
-            lines: List of input lines
-            
-        Returns:
-            Cleaned and joined input string
-        """
-        if not lines:
-            return ""
-        
-        # Remove excessive whitespace and join lines
-        cleaned_lines = [line.rstrip() for line in lines]
-        
-        # Remove trailing empty lines
-        while cleaned_lines and not cleaned_lines[-1]:
-            cleaned_lines.pop()
-        
-        result = "\n".join(cleaned_lines)
-        
-        # Basic security: limit total input size
-        if len(result) > self.max_input_size:
-            UIService.print_error(f"Input too large (max {self.max_input_size} characters)")
-            return ""
-        
-        return result
-    
-    def confirm_action(self, message: str, default: bool = False) -> bool:
-        """
-        Ask user for yes/no confirmation.
-        
-        Args:
-            message: Confirmation message to display
-            default: Default value if user just presses enter
-            
-        Returns:
-            True for yes, False for no
-        """
-        suffix = " [Y/n]" if default else " [y/N]"
-        prompt_text = f"{message}{suffix}: "
-        
-        try:
-            response = input(prompt_text).strip().lower()
-            if not response:
-                return default
-            return response in ('y', 'yes', 'true', '1')
-        except (EOFError, KeyboardInterrupt):
-            return False
+        """Clean and validate input lines."""
+        return self._multiline_handler.validator.clean_input(lines)
     
     def is_tty(self) -> bool:
         """Check if input is from a terminal (TTY)."""
-        return os.isatty(sys.stdin.fileno())
+        return TerminalUtils.is_tty()
     
     def get_terminal_size(self) -> tuple:
         """Get terminal size for formatting purposes."""
-        try:
-            return os.get_terminal_size()
-        except OSError:
-            # Fallback for non-terminal environments
-            return os.terminal_size((80, 24))
+        cols, lines = TerminalUtils.get_terminal_size()
+        # Return in the original format for backward compatibility
+        import os
+        return os.terminal_size((cols, lines))

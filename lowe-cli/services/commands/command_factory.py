@@ -18,17 +18,16 @@ class CommandFactory:
             'lookup': LookupCommandHandler,
             'index': IndexCommandHandler
         }
-        self._instances: Dict[str, BaseCommandHandler] = {}
     
     def get_handler(self, command_name: str) -> BaseCommandHandler:
         """
-        Get a command handler instance for the specified command.
+        Get a fresh command handler instance for the specified command.
         
         Args:
             command_name: Name of the command to get handler for
             
         Returns:
-            Command handler instance
+            Fresh command handler instance
             
         Raises:
             ValueError: If command is not supported
@@ -36,10 +35,7 @@ class CommandFactory:
         if command_name not in self._handlers:
             raise ValueError(f"Unsupported command: {command_name}")
         
-        if command_name not in self._instances:
-            self._instances[command_name] = self._handlers[command_name]()
-        
-        return self._instances[command_name]
+        return self._handlers[command_name]()
     
     def execute_command(self, command_name: str, user_message: str = "") -> None:
         """

@@ -35,5 +35,5 @@ class HistoryService:
             else:
                 return ""
                 
-        except Exception:
+        except subprocess.SubprocessError:
             return ""
