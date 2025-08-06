@@ -1,5 +1,6 @@
 from langchain_chroma import Chroma
 from services.huggingface.embedding_model_service import EmbeddingModelService
+from utils.constants import Constants
 
 
 class ChromaService:
@@ -27,6 +28,6 @@ class ChromaService:
         vector_store = Chroma(
             collection_name="cli_sage_collection",
             embedding_function=self.embeddings,
-            persist_directory="./chroma_langchain_db",  # Where to save data locally
+            persist_directory=Constants.CHROMA_DB_PATH,  # Where to save data locally
         )
         return vector_store

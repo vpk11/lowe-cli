@@ -4,6 +4,7 @@ class Constants:
     MODEL_NAME = os.getenv("MODEL_NAME") or "gemini-2.0-flash"
     MODEL_PROVIDER = os.getenv("MODEL_PROVIDER") or "google_genai"
     KNOWLEDGE_BASE = os.getenv("KNOWLEDGE_BASE_URL") or "http://localhost:4000/"
+    CHROMA_DB_PATH = os.getenv("CHROMA_DB_PATH") or "./chroma_langchain_db"
 
     ASK_SYSTEM_PROMPT = """
     You are a CLI assistant named LoweCLI. Provide clear and concise solutions for the error messages passed as chat.

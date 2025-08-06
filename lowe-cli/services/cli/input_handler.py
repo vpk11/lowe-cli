@@ -1,6 +1,5 @@
 """Input handler for CLI operations following Python best practices."""
 import sys
-import signal
 import os
 from typing import Optional, List, Callable
 from services.ui.ui_service import UIService
@@ -21,19 +20,6 @@ class InputHandler:
         self.prompt = prompt
         self.max_input_size = max_input_size
         self.max_lines = max_lines
-        self._original_sigint_handler = None
-        self._setup_signal_handlers()
-    
-    def _setup_signal_handlers(self) -> None:
-        """Setup signal handlers for graceful interruption handling."""
-        # For Ctrl+C, we'll let Python's default KeyboardInterrupt handling work
-        # and just catch it in our input methods. This is simpler and more reliable.
-        pass
-    
-    def restore_signal_handlers(self) -> None:
-        """Restore original signal handlers."""
-        if self._original_sigint_handler:
-            signal.signal(signal.SIGINT, self._original_sigint_handler)
     
     def get_multiline_input(self, max_lines: Optional[int] = None, 
                            custom_prompt: Optional[str] = None) -> Optional[str]:

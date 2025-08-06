@@ -11,7 +11,7 @@ class IndexCommandHandler(BaseCommandHandler):
     
     def __init__(self):
         """Initialize the index command handler."""
-        self.db_path = "./chroma_langchain_db"
+        self.db_path = Constants.CHROMA_DB_PATH
     
     def execute(self, user_message: str = "") -> None:
         """
