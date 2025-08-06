@@ -15,9 +15,28 @@ class State(TypedDict):
 
 
 class LlmClient:
+    _instance = None
+    _model = None
+    
+    def __new__(cls):
+        if cls._instance is None:
+            cls._instance = super(LlmClient, cls).__new__(cls)
+            cls._instance._initialized = False
+        return cls._instance
+    
     def __init__(self):
-        self.model_name = Constants.MODEL_NAME
-        self.model_provider = Constants.MODEL_PROVIDER
+        if not self._initialized:
+            self.model_name = Constants.MODEL_NAME
+            self.model_provider = Constants.MODEL_PROVIDER
+            self._model = init_chat_model(self.model_name, model_provider=self.model_provider)
+            self._initialized = True
+    
+    @classmethod
+    def get_instance(cls):
+        """Get the singleton instance of LlmClient."""
+        if cls._instance is None:
+            cls._instance = cls()
+        return cls._instance
 
     def invoke(self, user_prompt, system_prompt=None):
         if system_prompt is None:
@@ -27,8 +46,7 @@ class LlmClient:
                 SystemMessage(system_prompt),
                 HumanMessage(user_prompt),
             ]
-        model = init_chat_model(self.model_name, model_provider=self.model_provider)
-        model_response = model.invoke(message)
+        model_response = self._model.invoke(message)
         return model_response
 
     def retrieve_and_invoke(self, user_message, system_prompt=None):

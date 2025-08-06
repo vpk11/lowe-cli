@@ -8,6 +8,10 @@ from utils.constants import Constants
 class HelpCommandHandler(BaseCommandHandler):
     """Handler for help command operations."""
     
+    def __init__(self):
+        """Initialize the help command handler with a shared LlmClient instance."""
+        self.llm_client = LlmClient.get_instance()
+    
     def execute(self, user_message: str) -> None:
         """
         Execute help command to provide assistance and explanations.
@@ -24,7 +28,7 @@ class HelpCommandHandler(BaseCommandHandler):
             return
 
         def execute_help():
-            response = LlmClient().invoke(user_message, Constants.HELP_SYSTEM_PROMPT)
+            response = self.llm_client.invoke(user_message, Constants.HELP_SYSTEM_PROMPT)
             return response.content
 
         content = UIService.execute_with_spinner(execute_help)

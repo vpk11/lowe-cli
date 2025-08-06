@@ -20,6 +20,11 @@ class UIService:
         rich_print(f"[green]{message}[/green]")
     
     @staticmethod
+    def print_info(message: str) -> None:
+        """Print an info message in blue."""
+        rich_print(f"[blue]{message}[/blue]")
+    
+    @staticmethod
     def print_prompt() -> None:
         """Print the CLI prompt."""
         rich_print("[bold green]lowe-cli:bulb:[/bold green][yellow]>[/yellow] ", end="")

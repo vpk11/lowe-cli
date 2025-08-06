@@ -11,11 +11,12 @@ class PerformCommandHandler(BaseCommandHandler):
     """Handler for perform command operations."""
     
     def __init__(self):
-        """Initialize the perform command handler with prompt template."""
+        """Initialize the perform command handler with prompt template and shared LlmClient instance."""
         self.prompt_template = ChatPromptTemplate([
             ("system", Constants.PERFORM_SYSTEM_PROMPT),
             ("user", Constants.RAG_USER_PROMPT)
         ])
+        self.llm_client = LlmClient.get_instance()
     
     def execute(self, user_message: str) -> None:
         """
@@ -37,7 +38,7 @@ class PerformCommandHandler(BaseCommandHandler):
                 "question": user_message, 
                 "context": HistoryService.get_recent_history()
             })
-            response = LlmClient().invoke(messages)
+            response = self.llm_client.invoke(messages)
             return response.content
 
         content = UIService.execute_with_spinner(execute_perform)

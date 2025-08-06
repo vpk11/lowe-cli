@@ -6,6 +6,7 @@ from utils.constants import Constants
 class ChatManagement:
     def __init__(self):
         self.chats_by_session_id = {}
+        self.llm_client = LlmClient.get_instance()
 
     def call_model(self, state, config):
         if "configurable" not in config or "session_id" not in config["configurable"]:
@@ -15,7 +16,7 @@ class ChatManagement:
         # Fetch the history of messages and append to it any new messages.
         chat_history = self.get_chat_history(config["configurable"]["session_id"])
         messages = [{"role": "system", "content": Constants.ASK_SYSTEM_PROMPT}] + list(chat_history.messages) + state["messages"]
-        ai_message = LlmClient().invoke(messages)
+        ai_message = self.llm_client.invoke(messages)
         # Finally, update the chat message history to include
         # the new input message from the user together with the
         # response from the model.

@@ -8,6 +8,10 @@ from utils.constants import Constants
 class LookupCommandHandler(BaseCommandHandler):
     """Handler for lookup command operations."""
     
+    def __init__(self):
+        """Initialize the lookup command handler with a shared LlmClient instance."""
+        self.llm_client = LlmClient.get_instance()
+    
     def execute(self, user_message: str) -> None:
         """
         Execute lookup command to search and retrieve information from the knowledge base.
@@ -16,7 +20,7 @@ class LookupCommandHandler(BaseCommandHandler):
             user_message: The search query from the user
         """
         def execute_lookup():
-            return LlmClient().retrieve_and_invoke(user_message, Constants.LOOKUP_SYSTEM_PROMPT)
+            return self.llm_client.retrieve_and_invoke(user_message, Constants.LOOKUP_SYSTEM_PROMPT)
 
         content = UIService.execute_with_spinner(execute_lookup)
         UIService.render_markdown(content)
