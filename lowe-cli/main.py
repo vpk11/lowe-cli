@@ -1,6 +1,4 @@
-import signal
 import argparse
-import sys
 from dotenv import load_dotenv
 from services.lowe_cli import LoweCli
 
@@ -9,14 +7,8 @@ Welcome to LoweCLI!
 This tool is designed to assist developers by providing an interactive command-line assistant that can answer questions, generate code, and help with various programming tasks. Just type your query and let LoweCLI help you boost your productivity!
 """
 
-def handle_exit(_signum, _frame):
-    print("\nbye bye")
-    sys.exit(0)
-
 def main():
     load_dotenv()
-    signal.signal(signal.SIGINT, handle_exit)
-    signal.signal(signal.SIGTERM, handle_exit)
     
     parser = argparse.ArgumentParser(prog='lowe-cli',description='AI powered command-line tool')
     parser.add_argument('-d', '--docs', help='Look up docs')

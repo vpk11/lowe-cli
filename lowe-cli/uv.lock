@@ -1,6 +1,6 @@
 version = 1
 revision = 2
-requires-python = ">=3.13.3"
+requires-python = ">=3.13"
 
 [[package]]
 name = "aiohappyeyeballs"
@@ -283,43 +283,6 @@ wheels = [
     { url = "https://files.pythonhosted.org/packages/55/95/c1b39757caf08c5e4c423b025e4d5c2206fc8e6659aa830625106a108911/chromadb-1.0.12-cp39-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl", hash = "sha256:ff82c806846301bb8ffbddd04abeb2413b13d1a1e7b1bb4328dd831ad01f1b1d", size = 19321461, upload-time = "2025-05-31T00:18:58.782Z" },
     { url = "https://files.pythonhosted.org/packages/3e/b3/f2f7ee7b90192df647e3bd85d3afdbc49d2039f7b7ca4768d3077e82706a/chromadb-1.0.12-cp39-abi3-win_amd64.whl", hash = "sha256:6e7993a903b27b184468c80e094259645c458f494dac6380f7156e5accb9b1cb", size = 19309929, upload-time = "2025-05-31T00:19:09.197Z" },
 ]
-
-[[package]]
-name = "cli-sage"
-version = "0.1.0"
-source = { virtual = "." }
-dependencies = [
-    { name = "argparse" },
-    { name = "langchain", extra = ["google-genai"] },
-    { name = "langchain-chroma" },
-    { name = "langchain-community" },
-    { name = "langchain-huggingface" },
-    { name = "langgraph" },
-    { name = "python-dotenv" },
-    { name = "rich" },
-    { name = "yaspin" },
-]
-
-[package.dev-dependencies]
-dev = [
-    { name = "ruff" },
-]
-
-[package.metadata]
-requires-dist = [
-    { name = "argparse", specifier = ">=1.4.0" },
-    { name = "langchain", extras = ["google-genai"], specifier = ">=0.3.25" },
-    { name = "langchain-chroma", specifier = ">=0.2.4" },
-    { name = "langchain-community", specifier = ">=0.3.24" },
-    { name = "langchain-huggingface", specifier = ">=0.2.0" },
-    { name = "langgraph", specifier = ">=0.4.5" },
-    { name = "python-dotenv", specifier = ">=1.1.0" },
-    { name = "rich", specifier = ">=14.0.0" },
-    { name = "yaspin", specifier = ">=3.1.0" },
-]
-
-[package.metadata.requires-dev]
-dev = [{ name = "ruff", specifier = ">=0.11.12" }]
 
 [[package]]
 name = "click"
@@ -1032,6 +995,43 @@ sdist = { url = "https://files.pythonhosted.org/packages/02/21/df84fe8b5c1697199
 wheels = [
     { url = "https://files.pythonhosted.org/packages/e2/72/f5304de3e7e80e6dc266c161230aecb7895958f78b5af1541317d7615fc6/langsmith-0.3.43-py3-none-any.whl", hash = "sha256:2d4558068abf2eeb60ff80871187724e07f5e657d7d6be9e0c603df36c41140a", size = 361148, upload-time = "2025-05-29T00:21:08.759Z" },
 ]
+
+[[package]]
+name = "lowe-cli"
+version = "0.1.0"
+source = { virtual = "." }
+dependencies = [
+    { name = "argparse" },
+    { name = "langchain", extra = ["google-genai"] },
+    { name = "langchain-chroma" },
+    { name = "langchain-community" },
+    { name = "langchain-huggingface" },
+    { name = "langgraph" },
+    { name = "python-dotenv" },
+    { name = "rich" },
+    { name = "yaspin" },
+]
+
+[package.dev-dependencies]
+dev = [
+    { name = "ruff" },
+]
+
+[package.metadata]
+requires-dist = [
+    { name = "argparse", specifier = ">=1.4.0" },
+    { name = "langchain", extras = ["google-genai"], specifier = ">=0.3.25" },
+    { name = "langchain-chroma", specifier = ">=0.2.4" },
+    { name = "langchain-community", specifier = ">=0.3.24" },
+    { name = "langchain-huggingface", specifier = ">=0.2.0" },
+    { name = "langgraph", specifier = ">=0.4.5" },
+    { name = "python-dotenv", specifier = ">=1.1.0" },
+    { name = "rich", specifier = ">=14.0.0" },
+    { name = "yaspin", specifier = ">=3.1.0" },
+]
+
+[package.metadata.requires-dev]
+dev = [{ name = "ruff", specifier = ">=0.11.12" }]
 
 [[package]]
 name = "markdown-it-py"
