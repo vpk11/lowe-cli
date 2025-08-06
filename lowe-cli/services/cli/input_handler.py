@@ -55,7 +55,7 @@ class InputHandler:
         if custom_prompt:
             print(custom_prompt)
         elif not hasattr(self, '_shown_multiline_help'):
-            print("Enter your input (empty line to finish, Ctrl+C to cancel, Ctrl+D to exit):")
+            UIService.print_info("Enter your input (empty line to finish, Ctrl+C to cancel, Ctrl+D to exit):")
             self._shown_multiline_help = True
         
         try:
