@@ -79,16 +79,9 @@ class CLIInterface:
     
     def run(self) -> None:
         """Run the main CLI interaction loop with improved error handling."""
-        keyboard_interrupt_occurred = False
-        
         while True:
             try:
-                # Only print prompt if we didn't just handle a KeyboardInterrupt
-                if not keyboard_interrupt_occurred:
-                    UIService.print_prompt()
-                else:
-                    keyboard_interrupt_occurred = False
-                
+                UIService.print_prompt()
                 command = self.get_user_input()
                 
                 # Handle exit conditions
@@ -106,10 +99,8 @@ class CLIInterface:
                         UIService.print_error(f"Error processing command: {e}")
                         
             except KeyboardInterrupt:
-                # Handle Ctrl+C at any point - print newline and continue with fresh prompt
+                # Handle Ctrl+C at any point - print newline and continue
                 print()  # New line after ^C
-                UIService.print_prompt()  # Print fresh prompt
-                keyboard_interrupt_occurred = True
                 continue
             except Exception as e:
                 UIService.print_error(f"Unexpected error: {e}")
