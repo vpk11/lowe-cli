@@ -10,13 +10,13 @@ from utils.constants import Constants
 class PerformCommandHandler(BaseCommandHandler):
     """Handler for perform command operations."""
     
-    def __init__(self):
+    def __init__(self) -> None:
         """Initialize the perform command handler with prompt template and shared LlmClient instance."""
-        self.prompt_template = ChatPromptTemplate([
+        self.prompt_template: ChatPromptTemplate = ChatPromptTemplate([
             ("system", Constants.PERFORM_SYSTEM_PROMPT),
             ("user", Constants.RAG_USER_PROMPT)
         ])
-        self.llm_client = LlmClient.get_instance()
+        self.llm_client: LlmClient = LlmClient.get_instance()
     
     def execute(self, user_message: str) -> None:
         """
@@ -33,7 +33,7 @@ class PerformCommandHandler(BaseCommandHandler):
         except ValueError:
             return
 
-        def execute_perform():
+        def execute_perform() -> str:
             messages = self.prompt_template.invoke({
                 "question": user_message, 
                 "context": HistoryService.get_recent_history()
@@ -41,5 +41,5 @@ class PerformCommandHandler(BaseCommandHandler):
             response = self.llm_client.invoke(messages)
             return response.content
 
-        content = UIService.execute_with_spinner(execute_perform)
+        content: str = UIService.execute_with_spinner(execute_perform)
         UIService.print_success(content)

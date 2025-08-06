@@ -1,5 +1,6 @@
 """CLI interface for handling user interactions and input processing."""
 import uuid
+from typing import Dict, Any
 from langchain_core.messages import HumanMessage, AIMessage
 from langgraph.constants import START
 from langgraph.graph import StateGraph, MessagesState
@@ -11,12 +12,12 @@ from services.cli.input_handler import InputHandler
 class CLIInterface:
     """Main CLI interface for handling user interactions."""
     
-    def __init__(self):
+    def __init__(self) -> None:
         """Initialize the CLI interface with a chat graph and input handler."""
-        self.session_id = uuid.uuid4()
-        self.config = {"configurable": {"session_id": self.session_id}}
-        self.graph = self._build_graph()
-        self.input_handler = InputHandler()
+        self.session_id: uuid.UUID = uuid.uuid4()
+        self.config: Dict[str, Any] = {"configurable": {"session_id": self.session_id}}
+        self.graph: StateGraph = self._build_graph()
+        self.input_handler: InputHandler = InputHandler()
     
     def _build_graph(self) -> StateGraph:
         """Build and compile the chat graph."""

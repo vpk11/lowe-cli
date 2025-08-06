@@ -7,27 +7,27 @@ class LoweCli:
     """Main CLI application class with simplified, modular design."""
     
     @staticmethod
-    def ask():
+    def ask() -> None:
         """Start the interactive CLI session."""
-        cli = CLIInterface()
+        cli: CLIInterface = CLIInterface()
         cli.run()
 
     @staticmethod
-    def help(user_message: str):
+    def help(user_message: str) -> None:
         """Handle help command."""
         CommandHandlers.help(user_message)
     
     @staticmethod
-    def perform(user_message: str):
+    def perform(user_message: str) -> None:
         """Handle perform command."""
         CommandHandlers.perform(user_message)
 
     @staticmethod
-    def lookup(user_message: str):
+    def lookup(user_message: str) -> None:
         """Handle lookup command."""
         CommandHandlers.lookup(user_message)
 
     @staticmethod
-    def index():
+    def index() -> None:
         """Handle index command."""
         CommandHandlers.index()

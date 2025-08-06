@@ -9,9 +9,9 @@ from utils.constants import Constants
 class IndexCommandHandler(BaseCommandHandler):
     """Handler for index command operations."""
     
-    def __init__(self):
+    def __init__(self) -> None:
         """Initialize the index command handler."""
-        self.db_path = Constants.CHROMA_DB_PATH
+        self.db_path: str = Constants.CHROMA_DB_PATH
     
     def execute(self, user_message: str = "") -> None:
         """
@@ -21,7 +21,7 @@ class IndexCommandHandler(BaseCommandHandler):
             user_message: Not used for index command, kept for interface consistency
         """
         if not os.path.exists(self.db_path):
-            def execute_index():
+            def execute_index() -> str:
                 IndexingService.index_documents(Constants.KNOWLEDGE_BASE)
                 return "Indexing completed"
 

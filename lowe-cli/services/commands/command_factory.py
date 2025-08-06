@@ -10,7 +10,7 @@ from services.commands.index_command_handler import IndexCommandHandler
 class CommandFactory:
     """Factory class for creating and managing command handlers."""
     
-    def __init__(self):
+    def __init__(self) -> None:
         """Initialize the command factory with available command handlers."""
         self._handlers: Dict[str, Type[BaseCommandHandler]] = {
             'help': HelpCommandHandler,
@@ -51,6 +51,6 @@ class CommandFactory:
         handler = self.get_handler(command_name)
         handler.execute(user_message)
     
-    def list_available_commands(self) -> list:
+    def list_available_commands(self) -> list[str]:
         """Get a list of available command names."""
         return list(self._handlers.keys())

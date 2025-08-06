@@ -7,14 +7,14 @@ from .terminal_utils import TerminalUtils
 class BaseInputHandler:
     """Base class for handling user input with common functionality."""
     
-    def __init__(self, prompt: str = ""):
+    def __init__(self, prompt: str = "") -> None:
         """
         Initialize base input handler.
         
         Args:
             prompt: Default prompt to display
         """
-        self.prompt = prompt
+        self.prompt: str = prompt
     
     def _handle_input_exceptions(self, operation_name: str = "input") -> None:
         """

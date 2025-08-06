@@ -6,7 +6,7 @@ from services.ui.ui_service import UIService
 class InputValidator:
     """Handles input validation and cleaning operations."""
     
-    def __init__(self, max_input_size: int = 5000, max_lines: int = 1000):
+    def __init__(self, max_input_size: int = 5000, max_lines: int = 1000) -> None:
         """
         Initialize input validator.
         
@@ -14,8 +14,8 @@ class InputValidator:
             max_input_size: Maximum input size in characters
             max_lines: Maximum number of lines to accept
         """
-        self.max_input_size = max_input_size
-        self.max_lines = max_lines
+        self.max_input_size: int = max_input_size
+        self.max_lines: int = max_lines
     
     def clean_input(self, lines: List[str]) -> str:
         """

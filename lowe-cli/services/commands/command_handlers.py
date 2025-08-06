@@ -5,7 +5,7 @@ from services.commands.command_factory import CommandFactory
 class CommandHandlers:
     """Simplified handlers for different CLI commands using modular architecture."""
     
-    _factory = CommandFactory()
+    _factory: CommandFactory = CommandFactory()
     
     @staticmethod
     def help(user_message: str) -> None:

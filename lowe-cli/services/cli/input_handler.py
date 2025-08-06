@@ -1,7 +1,10 @@
 """Input handler for CLI operations following Python best practices."""
-from typing import Optional, List
+from typing import Optional, List, TYPE_CHECKING
 from .multiline_input_handler import MultilineInputHandler
 from .terminal_utils import TerminalUtils
+
+if TYPE_CHECKING:
+    import os
 
 
 class InputHandler:
@@ -12,7 +15,7 @@ class InputHandler:
     actually used by the application (multiline input).
     """
     
-    def __init__(self, prompt: str = "", max_input_size: int = 5000, max_lines: int = 1000):
+    def __init__(self, prompt: str = "", max_input_size: int = 5000, max_lines: int = 1000) -> None:
         """
         Initialize input handler.
         
@@ -21,12 +24,12 @@ class InputHandler:
             max_input_size: Maximum input size in characters
             max_lines: Maximum number of lines to accept
         """
-        self.prompt = prompt
-        self.max_input_size = max_input_size
-        self.max_lines = max_lines
+        self.prompt: str = prompt
+        self.max_input_size: int = max_input_size
+        self.max_lines: int = max_lines
         
         # Initialize only the multiline handler (the only one actually used)
-        self._multiline_handler = MultilineInputHandler(prompt, max_input_size, max_lines)
+        self._multiline_handler: MultilineInputHandler = MultilineInputHandler(prompt, max_input_size, max_lines)
     
     def get_multiline_input(self, max_lines: Optional[int] = None, 
                            custom_prompt: Optional[str] = None) -> Optional[str]:
@@ -55,7 +58,7 @@ class InputHandler:
         """Check if input is from a terminal (TTY)."""
         return TerminalUtils.is_tty()
     
-    def get_terminal_size(self) -> tuple:
+    def get_terminal_size(self) -> "os.terminal_size[int]":
         """Get terminal size for formatting purposes."""
         cols, lines = TerminalUtils.get_terminal_size()
         # Return in the original format for backward compatibility

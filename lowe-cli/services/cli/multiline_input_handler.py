@@ -8,7 +8,7 @@ from .input_validator import InputValidator
 class MultilineInputHandler(BaseInputHandler):
     """Handles multi-line input operations."""
     
-    def __init__(self, prompt: str = "", max_input_size: int = 5000, max_lines: int = 1000):
+    def __init__(self, prompt: str = "", max_input_size: int = 5000, max_lines: int = 1000) -> None:
         """
         Initialize multiline input handler.
         
@@ -18,8 +18,8 @@ class MultilineInputHandler(BaseInputHandler):
             max_lines: Maximum number of lines to accept
         """
         super().__init__(prompt)
-        self.validator = InputValidator(max_input_size, max_lines)
-        self._shown_help = False
+        self.validator: InputValidator = InputValidator(max_input_size, max_lines)
+        self._shown_help: bool = False
     
     def get_input(self, max_lines: Optional[int] = None, 
                   custom_prompt: Optional[str] = None) -> Optional[str]:
